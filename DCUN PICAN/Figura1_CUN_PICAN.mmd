@@ -1,0 +1,19 @@
+%% Figura 1. Diagrama de casos de uso del negocio de PICAN
+flowchart LR
+    BN["Balance Nacional"]
+    CS["Consumo Social<br/>(Salud y Educación)"]
+    TM["Turismo / Mercado MLC"]
+    MU["Municipios<br/>(autoabastecimiento)"]
+    GM["GEGAN / MINAG"]
+
+    subgraph PICAN["Empresa Avícola Pinar del Río (PICAN)"]
+        CUN1(["CUN-1. Suministrar huevos<br/>a los destinos planificados"])
+        CUN2(["CUN-2. Suministrar carne<br/>de ave a los municipios"])
+        CUN3(["CUN-3. Informar el cumplimiento<br/>del Programa Avícola 2030"])
+    end
+
+    BN --- CUN1
+    CS --- CUN1
+    TM --- CUN1
+    MU --- CUN2
+    GM --- CUN3
